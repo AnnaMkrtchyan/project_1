@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-top {
+    background-color: #C0C0C0;
+    padding: 25px 0 50px;
+    border-top: 5px solid #76c38f;
+}
+
+.logo{
+    font-size: 35px;
+}
+
+.header-menu ul {
+    list-style: none;
+}
+.header-menu ul li a {
+    font-size: 16px;
+    font-weight: 700;
+    color:white;
+
+}
+
+.header-menu ul li a:hover {
+    text-decoration: none;
+    color: #76c38f;
+    transition: all 0.3s ease;
+}
+.menu-icon {
+    display: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+.ellipse2{
+    max-width: 430px;
+    width: 100%;
+    height: 430px;
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+    border:20px solid white;
+    border-radius: 100%;
+}
+
+
+/* ----------- */
+.bg2 {
+    background-color: #9e6161;
+    padding: 50px 0;
+}
+
+.service {
+    background-color: white ;
+}
+
+.service-icon{
+    font-size: 80px;
+}
+.service p {
+    font-size: 13px;
+}
+.service h3{
+    font-size: 35px;
+}
+
+.service:hover {
+    background-color: #76c38f;
+    cursor: pointer;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+/* ----------- */
+h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+h2:before,
+h2:after {
+    content: '';
+    border-top: 3px solid;
+    flex:1;
+}
+h2 span {
+	background-color:black;
+    color:white;
+    padding:10px 15px;
+    border-radius:15px;
+}
+
+p {
+   margin: 0; 
+}
+
+.work1 {
+    border: 10px solid white;
+    position: relative;
+}
+.work-text {
+    background-color: rgba(0, 0, 0, 0.5) ;
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    color:white;
+}
+.work1 img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.work1:hover img {
+	filter: grayscale(0%);
+    transition: all 0.5s ease;
+}
+.work1:hover .work-text{
+    display:none;
+    
+}
+.work1:hover{
+    border: 10px solid #76c38f;
+    cursor: pointer;
+}
+.textgreen{
+    color: #76c38f;
+}
+/* footer */
+footer {
+    background-color: #303030;
+    padding-top: 50px;
+}
+.quick-links {
+    list-style: none;
+}
+.quick-links li a::before{
+    content: "•";
+    color: #979797;
+    margin-right: 8px;
+}
+.quick-links li a{
+    color: #76c38f;
+}
+.quick-links li a:hover{
+    text-decoration: none;
+}
+
+.btn1 {
+    background-color: #76c38f;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid #76c38f;
+}
+.btn1:hover {
+    cursor: pointer;
+}
+.btn1:focus{
+    outline: 0;
+}
+.textgrey{
+    color: #979797;
+}
+textarea {
+    height: 80px;
+}
+
+input, 
+textarea {
+    border-radius: 10px;
+    background-color: #222222;
+    border: #222222;
+    outline: 0;
+}
+textarea {
+    resize: none;
+}
+.bg-bottom {
+    background-color: #2b2b2b;
+}
+/*-------------------- SMARTPHONES ----------------*/
+@media (min-width: 320px)  and (max-width: 768px) { 
+    h1 {
+     font-size: 30px;
+    }
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 35px;
+    }
+    .dnone{
+        display:none;
+    }
+    .active {
+        display:flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        background-color: #C0C0C0;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 9999; 
+    }
+    .ellipse2{
+        width: 350px;
+        height: 350px;
+        background-image: url('../img/1.jpg');
+        background-size: cover;
+        border:10px solid white;
+        border-radius: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin:auto;
+    }
+    .mp0 {
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+    .active li a {
+        margin-right: 0 !important;
+        font-size: 20px !important;
+    }
+    .active li {
+        padding-bottom: 15px !important;
+
+    }
+    .p0 {
+        padding-right:0 !important;
+    }
+    .service-icon{
+        font-size: 60px;
+    }    
+    .column{
+        flex-direction: column;
+    }
+    .textcenter{
+        text-align: center;
+    }
+    
+    .mb30{
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/*------------------TABLETS----------------*/
+@media (min-width: 768px)  and (max-width: 992px) {
+    h1 {
+     font-size: 30px;
+    }
+    .mb-30{
+        margin-bottom: 30px;
+    }
+    .dflex{
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+    
+}
